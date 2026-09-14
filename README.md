@@ -86,19 +86,19 @@ Spring BootとReactで開発したアパート管理支援Webアプリです。
 
 管理人・入居者それぞれの立場に応じてログインできます。
 
-![ログイン画面](images/login.png)
+![ログイン画面](login.png)
 
 ### 管理人ホーム画面
 
 管理人向けの機能から、入居者情報や修繕依頼を管理できます。
 
-![管理人ホーム画面](images/admin-home.png)
+![管理人ホーム画面](admin-home.png)
 
 ### 入居者詳細画面
 
 入居者の基本情報を確認でき、これまでの修繕依頼の履歴も確認できます。
 
-![入居者詳細画面](images/resident-detail.png)
+![入居者詳細画面](resident-detail.png)
 
 ## 画面・機能構成
 
