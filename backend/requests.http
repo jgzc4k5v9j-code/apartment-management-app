@@ -1,0 +1,36 @@
+POST http://localhost:8080/residents
+Content-Type: application/json
+
+{
+  "name": "山田太郎",
+  "roomNumber": "101",
+  "phone": "090-1234-5678"
+}
+### 修繕依頼登録
+POST http://localhost:8080/repair-requests
+Content-Type: application/json
+
+{
+  "residentId": 2,
+  "category": "水漏れ",
+  "description": "キッチンの蛇口から水が漏れています",
+  "status": "未対応"
+}
+### 修繕依頼一覧
+GET http://localhost:8080/repair-requests
+### 修繕依頼詳細
+GET http://localhost:8080/repair-requests/1
+### 修繕依頼ステータス変更
+PUT http://localhost:8080/repair-requests/1/status
+Content-Type: application/json
+
+{
+  "status": "対応中"
+}
+### 修繕依頼を対応済みに変更
+PUT http://localhost:8080/repair-requests/1/status
+Content-Type: application/json
+
+{
+  "status": "対応済み"
+}
